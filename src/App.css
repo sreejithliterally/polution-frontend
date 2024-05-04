@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app-name {
+  font-size: 2.3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* app box */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 500px;
+  min-height: 440px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* City Search  */
+.city-search {
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  outline: none;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(./components/img/searchicon.jpg);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.city-search:focus {
+  width: 60%;
+}
+
+/* city name */
+.city-name {
+  font-size: 1.25em;
+  color: #333;
+}
+h2 {
+  margin-bottom: 10px;
+}
+
+/* current date */
+.date {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+/* weather icon and temp */
+.icon-temp {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+.deg {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* weather description and wind speed */
+.des-wind {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Error message */
+.error-message {
+  display: block;
+  text-align: center;
+  color: rgb(20, 2, 2);
+  font-size: 20px;
+  margin-top: auto;
+  color: #333;
+}
+
+/* Other styles remain unchanged */
+
+/* Pollution status */
+.pollution-status {
+  margin-top: 20px;
+}
+
+.pollution-status h3 {
+  color: #333;
+  font-size: xx-large;
+}
+
+.polluted {
+  color: red;
+  font-size: x-large;
+}
+
+.not-polluted {
+  color: green;
+}
+
+/* CO, PM2.5, and Temperature */
+.icon-temp {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-temp span {
+  font-size: 0.9rem;
+  color: #333;
+}
+
